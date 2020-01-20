@@ -1,0 +1,221 @@
+Converting GML script: ${project_dir}\objects\obj_controlLV1\Create_0.gml
+Converted description /// @description Settings
+
+Converting GML script: ${project_dir}\objects\obj_controlLV1\Draw_0.gml
+Converted description /// @description Draw the global surface
+
+Converting GML script: ${project_dir}\objects\obj_brickBottom\Create_0.gml
+Converted description /// @description Settings
+
+Converting GML script: ${project_dir}\objects\obj_brickBottom2\Create_0.gml
+Converted description /// @description Settings
+
+Converting GML script: ${project_dir}\objects\obj_brickBreak\Create_0.gml
+Converted description /// @description Settings
+
+Converting GML script: ${project_dir}\objects\obj_brickBreak\Step_0.gml
+Converted description /// @description Meat and potatoes
+
+Converting GML script: ${project_dir}\objects\obj_brickBreak\Other_12.gml
+Converted description /// @description Break apart (mario form 2)/// @function Break apart 
+/// @param mario form 2
+
+Converting GML script: ${project_dir}\objects\obj_brickBreak\Other_11.gml
+Converted description /// @description Break apart (mario form 1)/// @function Break apart 
+/// @param mario form 1
+
+Converting GML script: ${project_dir}\objects\obj_brickBreak\Other_10.gml
+Converted description /// @description Bump upward
+
+Converting GML script: ${project_dir}\objects\obj_brickBreakPart\Create_0.gml
+Converted description /// @description Settings
+
+Converting GML script: ${project_dir}\objects\obj_brickBreakPart\Step_0.gml
+Converted description /// @description Fall to the ground
+
+Converting GML script: ${project_dir}\objects\obj_brickQuestion\Create_0.gml
+Converted description /// @description Settings
+
+Converting GML script: ${project_dir}\objects\obj_brickQuestion\Step_0.gml
+Converted description /// @description Bump?
+
+Converting GML script: ${project_dir}\objects\obj_brickQuestion\Other_10.gml
+Converted description /// @description Hit by mario
+
+Converting GML script: ${project_dir}\objects\obj_pipeSm\Create_0.gml
+Converted description /// @description Settings
+
+Converting GML script: ${project_dir}\objects\obj_pipeMed\Create_0.gml
+Converted description /// @description Settings
+
+Converting GML script: ${project_dir}\objects\obj_pipeLg\Create_0.gml
+Converted description /// @description Settings
+
+Converting GML script: ${project_dir}\objects\obj_mushroom\Create_0.gml
+Converted description /// @description Settings
+
+Converting GML script: ${project_dir}\objects\obj_mushroom\Alarm_0.gml
+Converted description /// @description Move to the next state
+
+Converting GML script: ${project_dir}\objects\obj_mushroom\Step_0.gml
+Converted description /// @description Meat and potatoes
+
+Converting GML script: ${project_dir}\objects\obj_fireFlower\Create_0.gml
+Converted description /// @description Settings
+
+Converting GML script: ${project_dir}\objects\obj_fireFlower\Alarm_0.gml
+Converted description /// @description Move to the next state
+
+Converting GML script: ${project_dir}\objects\obj_fireFlower\Step_0.gml
+Converted description /// @description Meat and potatoes
+
+Converting GML script: ${project_dir}\objects\obj_coin\Create_0.gml
+Converted description /// @description Settings
+
+Converting GML script: ${project_dir}\objects\obj_coin\Alarm_0.gml
+Converted description /// @description Move to the next state
+
+Converting GML script: ${project_dir}\objects\obj_coin\Step_0.gml
+Converted description /// @description Meat and potatoes
+
+Converting GML script: ${project_dir}\objects\obj_fireball\Create_0.gml
+Converted description /// @description Settings
+
+Converting GML script: ${project_dir}\objects\obj_fireball\Alarm_0.gml
+Converted description /// @description Destroy self
+
+Converting GML script: ${project_dir}\objects\obj_fireball\Step_0.gml
+Converted description /// @description Meat and potatoes
+
+Converting GML script: ${project_dir}\objects\obj_fireballExpl\Alarm_0.gml
+Converted description /// @description Destroy self
+
+Converting GML script: ${project_dir}\objects\obj_fireballExpl\Step_2.gml
+Converted description /// @description Follow mario
+
+Converting GML script: ${project_dir}\objects\obj_fireballExpl\Other_7.gml
+Converted description /// @description Animation end
+
+Converting GML script: ${project_dir}\objects\obj_mario\Create_0.gml
+Converted description /// @description Settings
+
+Converting GML script: ${project_dir}\objects\obj_mario\Alarm_4.gml
+Converted description /// @description Turn invincibility off
+
+Converting GML script: ${project_dir}\objects\obj_mario\Alarm_3.gml
+Converted description /// @description Change from fire flower mario to regular big mario
+
+Converting GML script: ${project_dir}\objects\obj_mario\Alarm_2.gml
+Converted description /// @description Shrink mario from big mario to little mario
+
+Converting GML script: ${project_dir}\objects\obj_mario\Alarm_1.gml
+Converted description /// @description Change mario from big mario to fire flower mario
+
+Converting GML script: ${project_dir}\objects\obj_mario\Alarm_0.gml
+Converted description /// @description Grow mario from little mario to big mario
+
+Converting GML script: ${project_dir}\objects\obj_mario\Step_0.gml
+Converted builtin - line 19: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 19: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 19: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted description /// @description Meat and potatoes
+Converted string - line 12: 'D' -> "D"
+Converted string - line 12: 'A' -> "A"
+Converted string - line 14: 'W' -> "W"
+Converted string - line 15: 'S' -> "S"
+
+Converting GML script: ${project_dir}\objects\obj_mario\Other_11.gml
+Converted description /// @description What happens when I touch a fire flower(the obj_fireFlower activates this code)/// @function What happens when I touch a fire flower
+/// @param the obj_fireFlower activates this code
+
+Converting GML script: ${project_dir}\objects\obj_mario\Other_10.gml
+Converted description /// @description What happens when I touch a mushroom (the obj_mushroom activates this code)/// @function What happens when I touch a mushroom 
+/// @param the obj_mushroom activates this code
+
+Converting GML script: ${project_dir}\objects\obj_mario\Draw_0.gml
+Converted description /// @description Draw items
+
+Converting GML script: ${project_dir}\objects\obj_goomba\Create_0.gml
+Converted description /// @description Settings
+
+Converting GML script: ${project_dir}\objects\obj_goomba\Alarm_1.gml
+Converted description /// @description Destroy self
+
+Converting GML script: ${project_dir}\objects\obj_goomba\Alarm_0.gml
+Converted description /// @description Switch image_xscale
+
+Converting GML script: ${project_dir}\objects\obj_goomba\Step_0.gml
+Converted description /// @description Meat and potatoes FSM
+
+Converting GML script: ${project_dir}\objects\obj_goomba\Other_11.gml
+Converted description /// @description Touched by fireball
+
+Converting GML script: ${project_dir}\objects\obj_goomba\Other_10.gml
+Converted description /// @description Squashed
+
+Converting GML script: ${project_dir}\objects\obj_koopa\Create_0.gml
+Converted description /// @description Settings
+
+Converting GML script: ${project_dir}\objects\obj_koopa\Alarm_0.gml
+Converted description /// @description Grow back out of shell after being stomped on
+
+Converting GML script: ${project_dir}\objects\obj_koopa\Step_0.gml
+Converted description /// @description Meat and potatoes FSM
+
+Converting GML script: ${project_dir}\objects\obj_koopa\Other_11.gml
+Converted description /// @description Touched by fireball
+
+Converting GML script: ${project_dir}\objects\obj_koopa\Other_10.gml
+Converted description /// @description Squashed
+
+Converting GML script: instance inst_B4342900 creation code
+Converted description /// @description Whats inside me
+
+Converting GML script: instance inst_AACFD25A creation code
+Converted description /// @description Whats inside me
+
+Converting GML script: instance inst_66B75994 creation code
+Converted description /// @description Whats inside me
+
+Converting GML script: instance inst_055C0DEE creation code
+Converted description /// @description Whats inside me
+
+Converting GML script: instance inst_9CA0C416 creation code
+Converted description /// @description Whats inside me
+
+Converting GML script: instance inst_17F47222 creation code
+Converted description /// @description Whats inside me
+
+Converting GML script: instance inst_D1F93CC6 creation code
+Converted description /// @description Whats inside me
+
+Converting GML script: instance inst_D3CC7545 creation code
+Converted description /// @description Whats inside me
+
+Converting GML script: instance inst_1CC3D177 creation code
+Converted description /// @description Whats inside me
+
+Converting GML script: instance inst_F272D6F3 creation code
+Converted description /// @description Whats inside me
+
+Converting GML script: instance inst_7E8ED316 creation code
+Converted description /// @description Whats inside me
+
+Converting GML script: instance inst_B8F2C3BA creation code
+Converted description /// @description Whats inside me
+
+Converting GML script: instance inst_70252FED creation code
+Converted description /// @description Whats inside me
+
+Converting GML script: instance inst_FC22C025 creation code
+Converted description /// @description Whats inside me
+
+Converting GML script: instance inst_539D5F88 creation code
+Converted description /// @description Whats inside me
+
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'view/__view_get.gml'
+Added compatibility script 'view/__init_view.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'
