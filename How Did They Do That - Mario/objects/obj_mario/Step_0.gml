@@ -7,8 +7,8 @@ based on the actual state the character it is within
 */
 
 var a, b, c, d, e;
-var grav_constant = 18;  //default 18
-var speed_constant = 5;   //default 5
+var grav_constant = 14;  //default 18
+var speed_constant = 8;   //default 5
 
 //Get keyboard inputs
 a = keyboard_check(ord("D")) - keyboard_check(ord("A"));//Which direction am I trying to go? -1 left or 1 right
@@ -73,7 +73,7 @@ switch(int_state){
     }else{
         if (d && int_form > 0){
             int_state = en_states.duck;
-			y -= 100;//makes mario a ninja
+			y -= 170;//makes mario a ninja
         }else{
             var t = instance_place(x, y, par_enemy);
             if (t > -4 && !b_invincible){
