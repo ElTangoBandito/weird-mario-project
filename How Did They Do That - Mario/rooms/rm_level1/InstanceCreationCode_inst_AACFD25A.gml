@@ -1,3 +1,3 @@
 /// @description Whats inside me?
 
-OI_myTreasure = obj_mushroom;
+OI_myTreasure = obj_coin;

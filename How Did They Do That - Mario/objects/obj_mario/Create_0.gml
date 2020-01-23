@@ -45,3 +45,7 @@ spr_marioSprite[2, 2] = spr_marioJumpFLg;
 spr_marioSprite[2, 3] = spr_marioSkidFLg;
 spr_marioSprite[2, 4] = spr_marioDuckFLg;
 
+//teleport boolean
+teleport = false;
+teleportDistance = 100;
+doubleJump = false;

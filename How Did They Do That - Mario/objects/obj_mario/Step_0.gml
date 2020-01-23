@@ -8,14 +8,15 @@ based on the actual state the character it is within
 
 var a, b, c, d, e;
 var grav_constant = 14;  //default 18
-var speed_constant = 8;   //default 5
-
+var speed_constant = 6;   //default 5
+var teleportButton;
 //Get keyboard inputs
 a = keyboard_check(ord("D")) - keyboard_check(ord("A"));//Which direction am I trying to go? -1 left or 1 right
 b = keyboard_check(vk_space);//Am I trying to run? 0 false 1 true
 c = keyboard_check(ord("W"));//Am I trying to jump? 0 false 1 true
 d = keyboard_check(ord("S"));//Am I trying to duck? 0 false 1 true
 e = keyboard_check_pressed(vk_space);//Did I press the space key this frame? 0 false 1 true (This is for shooting fireballs in form 2)
+teleportButton = keyboard_check(ord("E"));
 
 //Get gamepad inputs
 /*
@@ -67,13 +68,23 @@ if (int_form == 2 && e && int_state <> en_states.duck){
 switch(int_state){
     //Idle
     case en_states.idle:
+	doubleJump = false;
+	if (teleportButton && !teleport){
+		if (place_meeting(x, y - teleportDistance, par_brick)){
+		} else{
+			y -= teleportDistance;//makes mario a ninja
+			int_gravity = 0;
+			teleport = true;
+		}
+	} else {
+		teleport = false;
+	}
     if (c){
         int_gravity = 0;
         int_state = en_states.jump;
     }else{
         if (d && int_form > 0){
             int_state = en_states.duck;
-			y -= 170;//makes mario a ninja
         }else{
             var t = instance_place(x, y, par_enemy);
             if (t > -4 && !b_invincible){
@@ -120,6 +131,17 @@ switch(int_state){
     break;
     //Run
     case en_states.run:
+	doubleJump = false;
+	if (teleportButton && !teleport){
+		if (place_meeting(x, y - teleportDistance, par_brick)){
+		} else{
+			y -= teleportDistance;//makes mario a ninja
+			int_gravity = 0;
+			teleport = true;
+		}
+	} else {
+		teleport = false;
+	}
     if (c){
         int_gravity = 0;
         int_state = en_states.jump;
@@ -182,6 +204,14 @@ switch(int_state){
     break;
     //Fall
     case en_states.fall:
+	if (teleportButton && !teleport){
+		if (place_meeting(x, y - teleportDistance, par_brick)){
+		} else{
+			y -= teleportDistance;//makes mario a ninja
+			int_gravity = 0;
+			teleport = true;
+		}
+	}
     if (place_meeting(x, y + 1, par_brick)){
         if (a <> 0){
             int_state = en_states.run;
@@ -217,14 +247,21 @@ switch(int_state){
             }
         }
     }   
-	//if (c){
-        //int_gravity = 0;
-		//y = 0;
-        //int_state = en_states.jump;
-    //}
+	if (c && !doubleJump){
+		doubleJump = true;
+		int_state = en_states.jump;
+		int_gravity = 0;
+	}
     break;
     //Jump
     case en_states.jump:
+	if (teleportButton && !teleport){
+		y -= teleportDistance;
+		teleport = true;
+	}
+	if (doubleJump){
+		grav_constant = 12;
+	}
     if (d && int_form > 0){
         sprite_index = spr_marioSprite[int_form, 4];
     }else{
