@@ -1,0 +1,1 @@
+OI_myTreasure = obj_coin;
