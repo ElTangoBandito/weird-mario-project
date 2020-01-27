@@ -12,7 +12,8 @@ var speed_constant = 6;   //default 5
 var teleportButton;
 //Get keyboard inputs
 a = keyboard_check(ord("D")) - keyboard_check(ord("A"));//Which direction am I trying to go? -1 left or 1 right
-b = keyboard_check(vk_space);//Am I trying to run? 0 false 1 true
+b = false;
+//b = keyboard_check(vk_space);//Am I trying to run? 0 false 1 true
 c = keyboard_check(ord("W"));//Am I trying to jump? 0 false 1 true
 d = keyboard_check(ord("S"));//Am I trying to duck? 0 false 1 true
 e = keyboard_check_pressed(vk_space);//Did I press the space key this frame? 0 false 1 true (This is for shooting fireballs in form 2)
