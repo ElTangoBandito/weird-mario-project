@@ -205,6 +205,9 @@ switch(int_state){
     break;
     //Fall
     case en_states.fall:
+    if (y > room_height + 100){
+        room_restart();
+    }
 	if (teleportButton && !teleport){
 		if (place_meeting(x, y - teleportDistance, par_brick)){
 		} else{
